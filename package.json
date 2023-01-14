@@ -1,0 +1,37 @@
+{
+  "name": "react-starport",
+  "version": "1.0.0",
+  "private": "true",
+  "scripts": {
+    "prepare": "is-ci || husky install",
+    "lint": "eslint .",
+    "changeset": "changeset",
+    "build": "pnpm --filter @react-starport/core --filter @react-starport/playground run build",
+    "core:dev": "pnpm --filter @react-starport/core run dev",
+    "core:build": "pnpm --filter @react-starport/core run build",
+    "play:start": "pnpm --filter @react-starport/playground run start",
+    "play:build": "pnpm --filter @react-starport/playground run build"
+  },
+  "lint-staged": {
+    "**/*.{tsx, ts}": "eslint --fix",
+    "**/*.{css, scss, md}": "prettier --write"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.0",
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "@typescript-eslint/eslint-plugin": "^5.48.0",
+    "@typescript-eslint/parser": "^5.48.0",
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.3",
+    "is-ci": "^3.0.1",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.2",
+    "react": "^18.2.0",
+    "typescript": "^4.9.4"
+  }
+}

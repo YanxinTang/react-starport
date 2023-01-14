@@ -1,0 +1,25 @@
+@tailwind components;
+
+@layer components {
+  .btn {
+    @apply px-4
+      py-1
+      rounded
+      inline-block
+      bg-teal-600
+      text-white
+      cursor-pointer
+      hover:bg-teal-700
+      disabled:cursor-default
+      disabled:bg-gray-600
+      disabled:opacity-50
+      transition-all;
+  }
+
+  .icon-btn {
+    @apply opacity-75
+      transition-all
+      hover:opacity-100
+      hover:text-teal-700;
+  }
+}

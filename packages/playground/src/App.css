@@ -1,0 +1,21 @@
+html.dark {
+  background: #121212;
+}
+
+.page-enter {
+  opacity: 0;
+}
+
+.page-enter-active,
+.page-exit-active {
+  opacity: 1;
+  transition: opacity 150ms ease;
+}
+
+.debug .starport-craft {
+  background: #0805;
+}
+
+.debug .starport:not(.starport--landed) {
+  background: #8005;
+}

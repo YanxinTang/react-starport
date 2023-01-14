@@ -1,0 +1,7 @@
+.navigation ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0;
+  gap: 8px;
+}
