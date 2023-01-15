@@ -35,6 +35,9 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
+      - name: Copy README
+        run: cp README.md ./packages/core/
+
       - name: NPM Release
         run: pnpm publish -r --access=public --no-git-checks
 
