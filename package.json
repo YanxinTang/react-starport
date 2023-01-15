@@ -7,9 +7,10 @@
     "lint": "eslint .",
     "changeset": "changeset",
     "build": "pnpm --filter @react-starport/core --filter @react-starport/playground run build",
+    "dev": "pnpm -r --parallel run dev",
     "core:dev": "pnpm --filter @react-starport/core run dev",
     "core:build": "pnpm --filter @react-starport/core run build",
-    "play:start": "pnpm --filter @react-starport/playground run start",
+    "play:dev": "pnpm --filter @react-starport/playground run dev",
     "play:build": "pnpm --filter @react-starport/playground run build"
   },
   "lint-staged": {
