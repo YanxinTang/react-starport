@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './Navigation.css';
-import Logo from './../../logo.svg';
+import { ReactComponent as Logo } from './../../logo_square.svg';
 import Icon from '../Icon';
 import { useGlobalConfig } from '../GlobalConfig';
 import { classNames } from '../../utils';
@@ -13,7 +13,7 @@ const Navigation = () => {
   return (
     <nav className="px-8 py-4 mb-4 border-b border-gray-400/10 text-xl flex items-center gap-2">
       <Link to="/" className="flex gap-2 items-center">
-        <img src={Logo} className="h-10" alt="Logo" />
+        <Logo className="h-10 w-10" fill="white" />
         <div className="font-mono text-left leading-4 text-sm">
           React
           <br />

@@ -1,6 +1,6 @@
 
 <p align="center">
-<img height="200" src="./packages/playground/public/logo192.png" alt="React Starport">
+<img height="64" src="./packages/playground/src/logo.svg" alt="React Starport">
 </p>
 
 <p align="center">
