@@ -4,6 +4,8 @@ on:
   push:
     tags:
       - 'v*.*.*'
+permissions:
+  contents: write
 
 jobs:
   release:
@@ -28,10 +30,12 @@ jobs:
       - name: Build
         run: pnpm run build
 
-      - name: NPM Release
+      - name: Set publishing config
+        run: pnpm config set '//registry.npmjs.org/:_authToken' "${NODE_AUTH_TOKEN}"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+
+      - name: NPM Release
         run: pnpm publish -r --access=public --no-git-checks
 
       - name: Github Releases
