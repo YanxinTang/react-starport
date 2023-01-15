@@ -8,26 +8,31 @@ import Index from './pages/Index';
 import MyComponentDetail from './pages/MyComonentDetail';
 import NotFound from './pages/NotFound';
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <App />,
+      children: [
+        {
+          path: '/',
+          element: <Index />,
+        },
+        {
+          path: '/:idx',
+          element: <MyComponentDetail />,
+        },
+        {
+          path: '*',
+          element: <NotFound />,
+        },
+      ],
+    },
+  ],
   {
-    path: '/',
-    element: <App />,
-    children: [
-      {
-        path: '/',
-        element: <Index />,
-      },
-      {
-        path: '/:idx',
-        element: <MyComponentDetail />,
-      },
-      {
-        path: '*',
-        element: <NotFound />,
-      },
-    ],
-  },
-]);
+    basename: process.env.PUBLIC_URL,
+  }
+);
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
