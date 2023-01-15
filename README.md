@@ -7,6 +7,13 @@
 Transform React component across routes with animations
 </p>
 
+<a href="./LICENSE">
+<img alt="GitHub" src="https://img.shields.io/github/license/YanxinTang/react-starport">
+</a>
+<a href="https://www.npmjs.com/package/@react-starport/core">
+<img alt="npm (scoped)" src="https://img.shields.io/npm/v/@react-starport/core">
+</a>
+
 ## Motivation
 
 This project is inspried by [Vue Starport Project](https://github.com/antfu/vue-starport). Thanks all works from the authors.
