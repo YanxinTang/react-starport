@@ -11,7 +11,7 @@ export default function Index() {
 
   return (
     <div className="px-6 py-2">
-      <Logo className="h-16 my-12 mx-auto" />
+      <Logo className="w-full md:w-auto h-16 my-12 mx-auto" />
       <p className="mb-5">
         Transform React component across routes with animations
       </p>

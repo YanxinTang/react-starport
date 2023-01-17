@@ -14,7 +14,7 @@ const Navigation = () => {
     <nav className="px-8 py-4 mb-4 border-b border-gray-400/10 text-xl flex items-center gap-2">
       <Link to="/" className="flex gap-2 items-center">
         <Logo className="h-10 w-10" fill="white" />
-        <div className="font-mono text-left leading-4 text-sm">
+        <div className="font-mono text-left leading-4 text-sm hidden md:block">
           React
           <br />
           Starport
