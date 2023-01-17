@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-starport/static/css/main.d872d014.css",
-    "main.js": "/react-starport/static/js/main.949a46a9.js",
+    "main.css": "/react-starport/static/css/main.d5d70ca8.css",
+    "main.js": "/react-starport/static/js/main.f359b192.js",
     "static/js/308.6f253b0c.chunk.js": "/react-starport/static/js/308.6f253b0c.chunk.js",
     "static/media/logo.svg": "/react-starport/static/media/logo.840cbf4928b35623a226090c081586e1.svg",
     "static/media/logo_square.svg": "/react-starport/static/media/logo_square.fb730ec018597c010d217ce08ec81d3a.svg",
@@ -10,12 +10,12 @@
     "static/media/sun.svg": "/react-starport/static/media/sun.ea32b0b957ca9833df1241fe943423cc.svg",
     "static/media/github.svg": "/react-starport/static/media/github.22e65707326e3e1e37afd21c5334995a.svg",
     "static/media/moon.svg": "/react-starport/static/media/moon.8e4f45879b7e7e67721ab2f6a9d67bc0.svg",
-    "main.d872d014.css.map": "/react-starport/static/css/main.d872d014.css.map",
-    "main.949a46a9.js.map": "/react-starport/static/js/main.949a46a9.js.map",
+    "main.d5d70ca8.css.map": "/react-starport/static/css/main.d5d70ca8.css.map",
+    "main.f359b192.js.map": "/react-starport/static/js/main.f359b192.js.map",
     "308.6f253b0c.chunk.js.map": "/react-starport/static/js/308.6f253b0c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d872d014.css",
-    "static/js/main.949a46a9.js"
+    "static/css/main.d5d70ca8.css",
+    "static/js/main.f359b192.js"
   ]
 }
