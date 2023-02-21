@@ -22,4 +22,17 @@ export function classNames(...classNames: ClassName[]): ClassName {
   }, '');
 }
 
-export { isClient, isServer, root, isType };
+function pickBy<T>(
+  object: Record<string | number | symbol, T>,
+  predicate: (key: string | number | symbol, value: T) => boolean
+) {
+  const picked: Record<string | number | symbol, T> = {};
+  for (const [key, value] of Object.entries(object)) {
+    if (predicate(key, value)) {
+      picked[key] = value;
+    }
+  }
+  return picked;
+}
+
+export { isClient, isServer, root, isType, pickBy };

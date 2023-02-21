@@ -7,10 +7,9 @@ import React, {
 } from 'react';
 import { defaultOptions, StarportOptions } from '../options';
 import StarportContext from './StarportContext';
-import pickBy from 'lodash.pickby';
 import { getRectOfElement, StarportInstance } from '../instance';
 import { dispose, initial, update } from '../store/actions';
-import { classNames } from '../utils';
+import { classNames, pickBy } from '../utils';
 
 interface StarportProps extends Partial<StarportOptions> {
   port: string;
@@ -142,7 +141,7 @@ const Starport = (props: StarportProps) => {
         options: {
           ...defaultOptions,
           ...ctx.options,
-          ...pickBy(localOptions, (v: unknown) => v !== undefined),
+          ...pickBy(localOptions, (_, v) => v !== undefined),
         },
       })
     );
