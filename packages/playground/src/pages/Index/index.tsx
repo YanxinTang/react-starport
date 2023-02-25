@@ -41,6 +41,14 @@ export default function Index() {
           );
         })}
       </div>
+      <div className="mt-16 mb-4">
+        <h2 className="font-bold text-lg">Other examples</h2>
+        <div>
+          <Link to="/iphone" className="text-blue-700">
+            iPhone Setting
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

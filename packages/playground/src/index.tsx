@@ -7,6 +7,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Index from './pages/Index';
 import MyComponentDetail from './pages/MyComonentDetail';
 import NotFound from './pages/NotFound';
+import IPhoneApp from './pages/IPhoneApp';
+import Setting from './pages/IPhoneApp/Setting';
+import SettingDetail from './pages/IPhoneApp/SettingDetail';
+import IPhone from './pages/IPhone';
 
 const router = createBrowserRouter(
   [
@@ -23,8 +27,26 @@ const router = createBrowserRouter(
           element: <MyComponentDetail />,
         },
         {
+          path: '/iphone',
+          element: <IPhone />,
+        },
+        {
           path: '*',
           element: <NotFound />,
+        },
+      ],
+    },
+    {
+      path: '/iphone',
+      element: <IPhoneApp />,
+      children: [
+        {
+          path: 'setting',
+          element: <Setting />,
+        },
+        {
+          path: 'setting/detail',
+          element: <SettingDetail />,
         },
       ],
     },

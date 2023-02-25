@@ -1,0 +1,11 @@
+.IPhoneApp {
+  background: rgb(239, 237, 244);
+  padding: 0.5rem 1rem;
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
+  min-height: 100vh;
+}
+
+:global(.dark) .IPhoneApp {
+  background: #000000;
+}
