@@ -81,7 +81,7 @@ importers:
       '@babel/core': ^7.0.0-0
       '@babel/plugin-syntax-flow': ^7.14.5
       '@babel/plugin-transform-react-jsx': ^7.14.9
-      '@react-starport/core': workspace:^1.0.1
+      '@react-starport/core': workspace:^1.0.2
       '@tailwindcss/aspect-ratio': ^0.4.2
       '@testing-library/dom': ^7.21.4
       '@testing-library/jest-dom': ^5.16.5

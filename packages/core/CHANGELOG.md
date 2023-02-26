@@ -1,5 +1,11 @@
 # @react-starport/core
 
+## 1.0.2
+
+### Patch Changes
+
+- 840eaea: refactor(core): replace lodash.pickBy
+
 ## 1.0.1
 
 ### Patch Changes

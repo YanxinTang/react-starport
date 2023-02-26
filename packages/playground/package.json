@@ -1,6 +1,6 @@
 {
   "name": "@react-starport/playground",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "scripts": {
     "dev": "react-scripts start",
@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.0.0-0",
-    "@react-starport/core": "workspace:^1.0.1",
+    "@react-starport/core": "workspace:^1.0.2",
     "bootstrap-icons": "^1.10.3",
     "clsx": "^1.2.1",
     "react": "^18.2.0",

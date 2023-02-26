@@ -1,7 +1,7 @@
 {
   "name": "@react-starport/core",
   "access": "public",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Transform React component across routes with animations",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
