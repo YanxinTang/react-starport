@@ -3,7 +3,8 @@ name: Release
 on:
   push:
     tags:
-      - 'v*.*.*'
+      - '@react-starport/core@*.*.*'
+
 permissions:
   contents: write
 
@@ -19,6 +20,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 'lts/*'
+          registry-url: 'https://registry.npmjs.org'
 
       - uses: pnpm/action-setup@v2
         with:
@@ -28,27 +30,19 @@ jobs:
         run: pnpm install
 
       - name: Build
-        run: pnpm run build
-
-      - name: Set publishing config
-        run: pnpm config set '//registry.npmjs.org/:_authToken' "${NODE_AUTH_TOKEN}"
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+        run: pnpm run core:build
 
       - name: Copy README
         run: cp README.md ./packages/core/
 
-      - name: NPM Release
-        run: pnpm publish -r --access=public --no-git-checks
+      - name: NPM Publish
+        run: npm publish --access=public
+        working-directory: ./packages/core
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Github Releases
         uses: softprops/action-gh-release@v1
         with:
           body_path: ./packages/core/CHANGELOG.md
           token: ${{ secrets.RELEASE_GITHUB__TOKEN }}
-
-      - name: Deploy Github Page
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./packages/playground/build
