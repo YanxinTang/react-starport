@@ -1,21 +1,34 @@
 {
   "files": {
-    "main.css": "/static/css/main.d5d70ca8.css",
-    "main.js": "/static/js/main.5102b3cc.js",
+    "main.css": "/static/css/main.6a59bdce.css",
+    "main.js": "/static/js/main.f0aa21f2.js",
     "static/js/308.6f253b0c.chunk.js": "/static/js/308.6f253b0c.chunk.js",
+    "static/media/iPhone 13 - Midnight.png": "/static/media/iPhone 13 - Midnight.ef167939cbfa8a284e95.png",
     "static/media/logo.svg": "/static/media/logo.840cbf4928b35623a226090c081586e1.svg",
     "static/media/logo_square.svg": "/static/media/logo_square.fb730ec018597c010d217ce08ec81d3a.svg",
+    "static/media/wifi.svg": "/static/media/wifi.c8220097d7687dd23ee11f787aba8154.svg",
     "index.html": "/index.html",
     "static/media/bug.svg": "/static/media/bug.a9a674c7747a7c2f2153170d44ae0a4b.svg",
     "static/media/sun.svg": "/static/media/sun.ea32b0b957ca9833df1241fe943423cc.svg",
+    "static/media/volume-up-fill.svg": "/static/media/volume-up-fill.ff473eb16f437a95223c91504f501054.svg",
     "static/media/github.svg": "/static/media/github.22e65707326e3e1e37afd21c5334995a.svg",
+    "static/media/hourglass-split.svg": "/static/media/hourglass-split.3cb8960f567f8e95f9f935a928eeca30.svg",
     "static/media/moon.svg": "/static/media/moon.8e4f45879b7e7e67721ab2f6a9d67bc0.svg",
-    "main.d5d70ca8.css.map": "/static/css/main.d5d70ca8.css.map",
-    "main.5102b3cc.js.map": "/static/js/main.5102b3cc.js.map",
+    "static/media/broadcast-pin.svg": "/static/media/broadcast-pin.d4a22b41bad109053957f2438e793135.svg",
+    "static/media/bluetooth.svg": "/static/media/bluetooth.23fbf461ac67b654a650e65b0558d490.svg",
+    "static/media/airplane-fill.svg": "/static/media/airplane-fill.a569e398e47c041b15fa3af245d9cca4.svg",
+    "static/media/reception-4.svg": "/static/media/reception-4.d10629db7fe67e80f07ad1a1a7293aad.svg",
+    "static/media/moon-fill.svg": "/static/media/moon-fill.9b943b998a06a12d76d35969fdf78b15.svg",
+    "static/media/battery-half.svg": "/static/media/battery-half.a73290e260443a32ca78e7daec9c9c6c.svg",
+    "static/media/bell-fill.svg": "/static/media/bell-fill.1a9e3ba8438619bf458691d6f04df0b2.svg",
+    "static/media/chevron-right.svg": "/static/media/chevron-right.61c607bb99397366b3b25f0ea180d905.svg",
+    "static/media/chevron-left.svg": "/static/media/chevron-left.c80cdd8edb8ab6c8a1634e6d14e15383.svg",
+    "main.6a59bdce.css.map": "/static/css/main.6a59bdce.css.map",
+    "main.f0aa21f2.js.map": "/static/js/main.f0aa21f2.js.map",
     "308.6f253b0c.chunk.js.map": "/static/js/308.6f253b0c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5d70ca8.css",
-    "static/js/main.5102b3cc.js"
+    "static/css/main.6a59bdce.css",
+    "static/js/main.f0aa21f2.js"
   ]
 }
