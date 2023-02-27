@@ -14,6 +14,7 @@ import { ReactComponent as chevronLeft } from 'bootstrap-icons/icons/chevron-lef
 import { ReactComponent as chevronRight } from 'bootstrap-icons/icons/chevron-right.svg';
 import { ReactComponent as batteryHalf } from 'bootstrap-icons/icons/battery-half.svg';
 import { ReactComponent as reception4 } from 'bootstrap-icons/icons/reception-4.svg';
+import { ReactComponent as link } from 'bootstrap-icons/icons/link.svg';
 
 export {
   github,
@@ -32,4 +33,5 @@ export {
   chevronRight,
   batteryHalf,
   reception4,
+  link
 };

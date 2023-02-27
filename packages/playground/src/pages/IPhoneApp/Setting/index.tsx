@@ -63,7 +63,7 @@ const Setting = (props: SettingProps) => {
           />
           <MenuItem
             label="个人热点"
-            icon="airplaneFill"
+            icon="link"
             iconBackgroundColor="bg-green-500"
             to="detail"
           />
